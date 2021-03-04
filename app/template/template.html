@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{block "title" .}}PolymerDesign{{end}}</title>
+        <meta name="description" content="Showcase and portfolio for Oliver Mitchell (PolymerDesign)">
+        <meta name="author" content="Oliver Mitchell">
+
+        <link rel="stylesheet" href="/icon/fontawesome/css/all.css">
+
+        <link rel="stylesheet" href="/css/theme.css">
+
+        {{block "head" .}}{{end}}
+
+        
+    </head>
+    <body>
+        <div class="site-content" id="polymerdesign-app">
+            {{block "content" .}}{{end}}
+        </div>
+
+        <script type="text/x-template" id="template-home">
+            {{block "template-home" .}}{{end}}
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script src="/dist/app.js"></script>
+
+        {{block "script" .}}{{end}}
+    </body>
+</html>
+

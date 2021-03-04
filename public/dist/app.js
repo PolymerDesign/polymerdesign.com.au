@@ -1,0 +1,2 @@
+"use strict";var vue=new Vue({el:"#polymerdesign-app",delimiters:["{","}"],data:{},mounted:function(){},methods:{toggleMenuButton:function(b){var c=b.target;document.activeElement===c&&setTimeout(function(){c.blur()},0,c)},hoverMenuButton:function(d){var a=d.target,b=document.activeElement;document.activeElement.className&&document.activeElement.className.includes("toolbar_menu_text")&&setTimeout(function(){b.blur(),a.focus()},0,a)}}});
+//# sourceMappingURL=app.js.map

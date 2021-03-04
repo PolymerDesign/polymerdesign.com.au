@@ -1,0 +1,105 @@
+
+{{ define "head" }}
+
+<link rel="stylesheet" href="/css/os.css" type="text/css">
+
+{{ end }}
+
+{{define "content"}}
+
+<div class="system_view">
+    <ul class="system_toolbar">
+        <div class="flex_h_align">
+            <div class="system_toolbar_items">
+                <div class="toolbar_item toolbar_menu">
+                    <button class="toolbar_menu_text"><div class="sprite r_sprite sprite_icon" x="0" y="2"></div></button>
+                    <div class="toolbar_menu_start">
+                        <div class="toolbar_menu_start_container">
+                            <div class="toolbar_menu_start_strip">PolymerDesign</div>
+                            <div class="toolbar_menu_start_strip_color"></div>
+                            <div class="toolbar_menu_start_items">
+                                <ul class="toolbar_menu_start_apps">
+                                    <li class="in_dev">Welcome</li>
+                                    <li class="in_dev">About</li>
+                                    <li class="in_dev">Portfolio</li>
+                                    <li class="in_dev">Feed</li>
+                                    <li class="toolbar_menu_start_separator"></li>
+                                    <li class="in_dev">Login</li>
+                                    <li class="toolbar_menu_start_separator"></li>
+                                </ul>
+                                <ul class="toolbar_menu_start_func">
+                                    <li>
+                                        <button type="button" class="std_button button_login"><i class="far fa-key"></i></button>
+                                    </li>
+                                    <li class="flex_spacer"></li>
+                                    <li>
+                                        <button type="button" class="std_button button_reload"><i class="fas fa-redo-alt"></i></button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="std_button button_power_off"><i class="fas fa-power-off"></i></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <li class="toolbar_item toolbar_menu">
+                    <button class="toolbar_menu_text"
+                            @mouseover="hoverMenuButton($event)"
+                            @mousedown="toggleMenuButton($event)">File</button>
+                    <div class="toolbar_menu_dropdown">
+                        <ul>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="2" y="0"></div>New File</li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="1" y="0"></div></i>Save</li>
+                            <li class="toolbar_menu_separator"></li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="3" y="0"></div></i>Reload</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="toolbar_item toolbar_menu">
+                    <button class="toolbar_menu_text"
+                            @mouseover="hoverMenuButton($event)"
+                            @mousedown="toggleMenuButton($event)">View</button>
+                    <div class="toolbar_menu_dropdown">
+                        <ul>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="1" y="1"></div>Theme</li>
+                            <li class="toolbar_menu_separator"></li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="0" y="1"></div>Close All</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="toolbar_item toolbar_menu">
+                    <button class="toolbar_menu_text"
+                            @mouseover="hoverMenuButton($event)"
+                            @mousedown="toggleMenuButton($event)">About</button>
+                    <div class="toolbar_menu_dropdown">
+                        <ul>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="2" y="1"></div>Sitemap</li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="3" y="1"></div>Cookies</li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="4" y="1"></div>Copyright</li>
+                            <li class="toolbar_menu_separator"></li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="5" y="1"></div>About</li>
+                            <li class="in_dev"><div class="sprite m_sprite sprite_icon" x="0" y="0"></div>Version</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="toolbar_item toolbar_announcements flex_h_align">
+                    Announcement
+                </li>
+                <li class="toolbar_item toolbar_status flex_h_align">
+                    01/01/1971 01:00AM
+                </li>
+            </div>
+        </div>
+    </ul>
+
+    <div class="system_desktop">
+
+    </div>
+
+    <div class="system_window_container">
+
+    </div>
+</div>
+
+{{end}}
